@@ -1,0 +1,349 @@
+{
+    "version": "1.0.0",
+    "queries": [
+        {
+            "Query": {
+                "Commands": [
+                    {
+                        "SemanticQueryDataShapeCommand": {
+                            "Query": {
+                                "Version": 2,
+                                "From": [
+                                    {
+                                        "Name": "c",
+                                        "Entity": "Calendario",
+                                        "Type": 0
+                                    },
+                                    {
+                                        "Name": "m",
+                                        "Entity": "Medidas",
+                                        "Type": 0
+                                    },
+                                    {
+                                        "Name": "t",
+                                        "Entity": "tblTipoArrecadacao",
+                                        "Type": 0
+                                    },
+                                    {
+                                        "Name": "t1",
+                                        "Entity": "tblEstados",
+                                        "Type": 0
+                                    }
+                                ],
+                                "Select": [
+                                    {
+                                        "Column": {
+                                            "Expression": {
+                                                "SourceRef": {
+                                                    "Source": "c"
+                                                }
+                                            },
+                                            "Property": "AbrevMes"
+                                        },
+                                        "Name": "Calendario.AbrevMes"
+                                    },
+                                    {
+                                        "Measure": {
+                                            "Expression": {
+                                                "SourceRef": {
+                                                    "Source": "m"
+                                                }
+                                            },
+                                            "Property": "Soma Ano Atual"
+                                        },
+                                        "Name": "Medidas.Soma Ano Atual"
+                                    }
+                                ],
+                                "Where": [
+                                    {
+                                        "Condition": {
+                                            "Not": {
+                                                "Expression": {
+                                                    "Comparison": {
+                                                        "ComparisonKind": 0,
+                                                        "Left": {
+                                                            "Measure": {
+                                                                "Expression": {
+                                                                    "SourceRef": {
+                                                                        "Source": "m"
+                                                                    }
+                                                                },
+                                                                "Property": "Soma Ano Atual"
+                                                            }
+                                                        },
+                                                        "Right": {
+                                                            "Literal": {
+                                                                "Value": "null"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "Target": [
+                                            {
+                                                "Column": {
+                                                    "Expression": {
+                                                        "SourceRef": {
+                                                            "Source": "c"
+                                                        }
+                                                    },
+                                                    "Property": "AbrevMes"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Condition": {
+                                            "Not": {
+                                                "Expression": {
+                                                    "Comparison": {
+                                                        "ComparisonKind": 0,
+                                                        "Left": {
+                                                            "Column": {
+                                                                "Expression": {
+                                                                    "SourceRef": {
+                                                                        "Source": "c"
+                                                                    }
+                                                                },
+                                                                "Property": "AbrevMes"
+                                                            }
+                                                        },
+                                                        "Right": {
+                                                            "Literal": {
+                                                                "Value": "null"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "Condition": {
+                                            "In": {
+                                                "Expressions": [
+                                                    {
+                                                        "Column": {
+                                                            "Expression": {
+                                                                "SourceRef": {
+                                                                    "Source": "t"
+                                                                }
+                                                            },
+                                                            "Property": "NM_TIP_ARRECAD"
+                                                        }
+                                                    }
+                                                ],
+                                                "Values": [
+                                                    [
+                                                        {
+                                                            "Literal": {
+                                                                "Value": "'Dívida Ativa'"
+                                                            }
+                                                        }
+                                                    ],
+                                                    [
+                                                        {
+                                                            "Literal": {
+                                                                "Value": "'ICMS Primário'"
+                                                            }
+                                                        }
+                                                    ],
+                                                    [
+                                                        {
+                                                            "Literal": {
+                                                                "Value": "'ICMS Secundário'"
+                                                            }
+                                                        }
+                                                    ],
+                                                    [
+                                                        {
+                                                            "Literal": {
+                                                                "Value": "'ICMS Terciário'"
+                                                            }
+                                                        }
+                                                    ],
+                                                    [
+                                                        {
+                                                            "Literal": {
+                                                                "Value": "'Outras Fontes de receitas'"
+                                                            }
+                                                        }
+                                                    ],
+                                                    [
+                                                        {
+                                                            "Literal": {
+                                                                "Value": "'Total Energia Elétrica'"
+                                                            }
+                                                        }
+                                                    ],
+                                                    [
+                                                        {
+                                                            "Literal": {
+                                                                "Value": "'Total Petróleo-Combustível-Lubrificantes'"
+                                                            }
+                                                        }
+                                                    ],
+                                                    [
+                                                        {
+                                                            "Literal": {
+                                                                "Value": "null"
+                                                            }
+                                                        }
+                                                    ]
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "Condition": {
+                                            "In": {
+                                                "Expressions": [
+                                                    {
+                                                        "Column": {
+                                                            "Expression": {
+                                                                "SourceRef": {
+                                                                    "Source": "t1"
+                                                                }
+                                                            },
+                                                            "Property": "NM_REG"
+                                                        }
+                                                    }
+                                                ],
+                                                "Values": [
+                                                    [
+                                                        {
+                                                            "Literal": {
+                                                                "Value": "'Sul'"
+                                                            }
+                                                        }
+                                                    ]
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "Condition": {
+                                            "In": {
+                                                "Expressions": [
+                                                    {
+                                                        "Column": {
+                                                            "Expression": {
+                                                                "SourceRef": {
+                                                                    "Source": "t1"
+                                                                }
+                                                            },
+                                                            "Property": "NM_EST"
+                                                        }
+                                                    }
+                                                ],
+                                                "Values": [
+                                                    [
+                                                        {
+                                                            "Literal": {
+                                                                "Value": "'Paraná'"
+                                                            }
+                                                        }
+                                                    ]
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "Condition": {
+                                            "In": {
+                                                "Expressions": [
+                                                    {
+                                                        "Column": {
+                                                            "Expression": {
+                                                                "SourceRef": {
+                                                                    "Source": "c"
+                                                                }
+                                                            },
+                                                            "Property": "Ano"
+                                                        }
+                                                    }
+                                                ],
+                                                "Values": [
+                                                    [
+                                                        {
+                                                            "Literal": {
+                                                                "Value": "'2023'"
+                                                            }
+                                                        }
+                                                    ]
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "Condition": {
+                                            "Comparison": {
+                                                "ComparisonKind": 4,
+                                                "Left": {
+                                                    "Column": {
+                                                        "Expression": {
+                                                            "SourceRef": {
+                                                                "Source": "c"
+                                                            }
+                                                        },
+                                                        "Property": "AnoNumero"
+                                                    }
+                                                },
+                                                "Right": {
+                                                    "Literal": {
+                                                        "Value": "2023L"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                ],
+                                "OrderBy": [
+                                    {
+                                        "Direction": 1,
+                                        "Expression": {
+                                            "Column": {
+                                                "Expression": {
+                                                    "SourceRef": {
+                                                        "Source": "c"
+                                                    }
+                                                },
+                                                "Property": "AbrevMes"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "Binding": {
+                                "Primary": {
+                                    "Groupings": [
+                                        {
+                                            "Projections": [
+                                                0,
+                                                1
+                                            ],
+                                            "Subtotal": 1
+                                        }
+                                    ]
+                                },
+                                "DataReduction": {
+                                    "DataVolume": 3,
+                                    "Primary": {
+                                        "Window": {
+                                            "Count": 500
+                                        }
+                                    }
+                                },
+                                "Version": 1
+                            }
+                        }
+                    }
+                ]
+            },
+            "QueryId": ""
+        }
+    ],
+    "cancelQueries": [],
+    "modelId": 8734205
+}

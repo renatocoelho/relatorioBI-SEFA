@@ -1,0 +1,172 @@
+{
+  "items": [
+    {
+      "origem": "Boletim de Arrecadação DF",
+      "exercicio": "2023",
+      "mes": 1,
+      "mesDesc": "JAN",
+      "valor": 3396696801.98
+    },
+    {
+      "origem": "Boletim de Arrecadação DF",
+      "exercicio": "2023",
+      "mes": 2,
+      "mesDesc": "FEV",
+      "valor": 2875750190.88
+    },
+    {
+      "origem": "Boletim de Arrecadação DF",
+      "exercicio": "2023",
+      "mes": 3,
+      "mesDesc": "MAR",
+      "valor": 3303671607.71
+    },
+    {
+      "origem": "Boletim de Arrecadação DF",
+      "exercicio": "2023",
+      "mes": 4,
+      "mesDesc": "ABR",
+      "valor": 3695495022.06
+    },
+    {
+      "origem": "Boletim de Arrecadação DF",
+      "exercicio": "2023",
+      "mes": 5,
+      "mesDesc": "MAI",
+      "valor": 3614986330.24
+    },
+    {
+      "origem": "Boletim de Arrecadação DF",
+      "exercicio": "2023",
+      "mes": 6,
+      "mesDesc": "JUN",
+      "valor": 3560570035.73
+    },
+    {
+      "origem": "Boletim de Arrecadação DF",
+      "exercicio": "2023",
+      "mes": 7,
+      "mesDesc": "JUL",
+      "valor": 3612400326.69
+    },
+    {
+      "origem": "Boletim de Arrecadação DF",
+      "exercicio": "2023",
+      "mes": 8,
+      "mesDesc": "AGO",
+      "valor": 3941040217.04
+    },
+    {
+      "origem": "Boletim de Arrecadação DF",
+      "exercicio": "2023",
+      "mes": 9,
+      "mesDesc": "SET",
+      "valor": 4075958492.01
+    },
+    {
+      "origem": "Boletim de Arrecadação DF",
+      "exercicio": "2023",
+      "mes": 10,
+      "mesDesc": "OUT",
+      "valor": 3913886176.85
+    },
+    {
+      "origem": "Boletim de Arrecadação DF",
+      "exercicio": "2023",
+      "mes": 11,
+      "mesDesc": "NOV",
+      "valor": 4047408891.87
+    },
+    {
+      "origem": "Boletim de Arrecadação DF",
+      "exercicio": "2023",
+      "mes": 12,
+      "mesDesc": "DEZ",
+      "valor": 4664675213.05
+    },
+    {
+      "origem": "Dados do Siconfi",
+      "exercicio": 2023,
+      "mes": 1,
+      "mesDesc": "JAN",
+      "valor": 3364949095.16
+    },
+    {
+      "origem": "Dados do Siconfi",
+      "exercicio": 2023,
+      "mes": 2,
+      "mesDesc": "FEV",
+      "valor": 2855161628.34
+    },
+    {
+      "origem": "Dados do Siconfi",
+      "exercicio": 2023,
+      "mes": 3,
+      "mesDesc": "MAR",
+      "valor": 3296031118.78
+    },
+    {
+      "origem": "Dados do Siconfi",
+      "exercicio": 2023,
+      "mes": 4,
+      "mesDesc": "ABR",
+      "valor": 3684096656.1
+    },
+    {
+      "origem": "Dados do Siconfi",
+      "exercicio": 2023,
+      "mes": 5,
+      "mesDesc": "MAI",
+      "valor": 3607158294.63
+    },
+    {
+      "origem": "Dados do Siconfi",
+      "exercicio": 2023,
+      "mes": 6,
+      "mesDesc": "JUN",
+      "valor": 3570698009.98
+    },
+    {
+      "origem": "Dados do Siconfi",
+      "exercicio": 2023,
+      "mes": 7,
+      "mesDesc": "JUL",
+      "valor": 3602911774.12
+    },
+    {
+      "origem": "Dados do Siconfi",
+      "exercicio": 2023,
+      "mes": 8,
+      "mesDesc": "AGO",
+      "valor": 3943652171.65
+    },
+    {
+      "origem": "Dados do Siconfi",
+      "exercicio": 2023,
+      "mes": 9,
+      "mesDesc": "SET",
+      "valor": 4072014723.48
+    },
+    {
+      "origem": "Dados do Siconfi",
+      "exercicio": 2023,
+      "mes": 10,
+      "mesDesc": "OUT",
+      "valor": 3908755232.17
+    },
+    {
+      "origem": "Dados do Siconfi",
+      "exercicio": 2023,
+      "mes": 11,
+      "mesDesc": "NOV",
+      "valor": 4041798621.9
+    },
+    {
+      "origem": "Dados do Siconfi",
+      "exercicio": 2023,
+      "mes": 12,
+      "mesDesc": "DEZ",
+      "valor": 4662107482.51
+    }
+  ]
+}
